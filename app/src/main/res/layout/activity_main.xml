@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#bae8e8"
+    tools:context=".MainActivity">
+<TextView
+    android:id="@+id/wtv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:text="Welcome"
+    android:textStyle="bold"
+    android:textColor="#2c698d"
+
+
+    android:fontFamily="cursive"
+    android:textSize="35sp"
+    />
+
+    <!--recycler view for displaying all notes-->
+
+    <!--fab for adding a new note-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/habitRV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/wtv"
+        android:layout_marginTop="15dp"
+        tools:listitem="@layout/habit_rv_item" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/idFAB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:src="@drawable/ic_add"
+        app:backgroundTint="#bae8e8"
+        app:tint="#272643" />
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/idBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:src="@drawable/ic_back"
+        app:backgroundTint="#bae8e8"
+        app:tint="#272643" />
+
+
+</RelativeLayout>

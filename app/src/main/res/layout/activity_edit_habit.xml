@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".EditHabitActivity">
+
+    <!--edit text for note title-->
+    <EditText
+        android:id="@+id/idEdtHabitName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:padding="25dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/editround"
+        android:hint="Enter Habit Title"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <!--edit text for note description-->
+    <EditText
+        android:id="@+id/idEdtHabitDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/idBtn"
+        android:layout_below="@id/idEdtHabitName"
+        android:layout_marginStart="10dp"
+        android:padding="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="150dp"
+        android:background="@drawable/editround"
+        android:gravity="start|top"
+        android:hint="Enter your Habit Details"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <!--button for saving and updating a note-->
+    <Button
+        android:id="@+id/idBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="50dp"
+        android:text="Save"
+        android:background="@drawable/roundstyle"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

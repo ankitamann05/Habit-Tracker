@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeActivity">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="3dp"
+        android:padding="4dp"
+        android:text="Welcome To Habit Tracker App"
+        android:textColor="#2c698d"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/user_nametv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcome"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="3dp"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="Enter Your Name"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_nametv"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/editround"
+        android:hint="Name"
+        android:textAlignment="center"
+        android:padding="4dp"
+        android:textColor="#2c698d"
+        android:textColorHint="@color/gray"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/ls"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_below="@+id/user_name"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="3dp"
+        android:text="Let's Start"
+        android:background="@drawable/roundstyle"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+     android:layout_margin="5dp"
+    app:cardBackgroundColor="#e3f6f5"
+    app:cardCornerRadius="40dp"
+    app:cardElevation="50dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp">
+
+
+        <TextView
+            android:id="@+id/idTVNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_toLeftOf="@id/idIVDelete"
+            android:padding="4dp"
+            android:text="Habit"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/idTVStreak"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVNote"
+            android:layout_margin="3dp"
+            android:layout_toLeftOf="@id/idIVDelete"
+            android:padding="4dp"
+            android:text="Streak:"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/idTVDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVStreak"
+            android:layout_margin="3dp"
+            android:layout_toLeftOf="@id/idIVDelete"
+            android:padding="4dp"
+            android:text="Updated At"
+            android:textColor="@color/black_shade_1"
+            android:textSize="20sp" />
+
+
+        <ImageView
+            android:id="@+id/idTVDone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/idIVDelete"
+            android:layout_alignBottom="@id/idIVDelete"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="-62dp"
+            android:padding="15dp"
+            android:src="@drawable/ic_done"
+            android:text="Done"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:tint="#2c698d" />
+
+        <ImageView
+            android:id="@+id/idIVDelete"
+            android:layout_width="55dp"
+            android:layout_height="58dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginBottom="5dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_delete"
+            android:text="Delete"
+            app:tint="#2c698d" />
+
+        <ImageView
+            android:id="@+id/idstar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/idTVDate"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="99dp"
+            android:layout_marginLeft="-196dp"
+            android:layout_marginEnd="184dp"
+            android:layout_marginBottom="34dp"
+            android:layout_toStartOf="@+id/idIVDelete"
+            android:layout_toRightOf="@id/idTVStreak"
+            android:src="@drawable/ic_star"
+
+            android:padding="5dp"
+            android:background="#e3f6f5"/>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
